@@ -1,0 +1,38 @@
+.goods {
+  background-color: $black;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 610px;
+  &__card-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__card {
+    background-color: white;
+    height: 400px;
+    width: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card-img {
+    height: 300px;
+  }
+
+  &__card-btn {
+    margin-top: 60px;
+
+    background-color: $orange;
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+}

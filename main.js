@@ -13,8 +13,8 @@ logoRed.addEventListener('mouseout', function () {
   logoRed.style.display = 'none'
 })
 
-const cards = document.querySelectorAll('.market__card')
-const cardImgs = document.querySelectorAll('.market__card-img')
+const cards = document.querySelectorAll('.bw-a')
+const cardImgs = document.querySelectorAll('.bw-img')
 
 cards.forEach(function (card, index) {
   card.addEventListener('mouseover', function () {

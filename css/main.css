@@ -125,6 +125,10 @@ a {
   margin: 0 auto;
 }
 
+.bw-img {
+  filter: grayscale(100%);
+}
+
 .header {
   background-image: url("../img/header-bg.webp");
   background-size: cover;
@@ -226,5 +230,74 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
+}
+
+.goods {
+  background-color: #141414;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 610px;
+}
+.goods__card-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.goods__card {
+  background-color: white;
+  height: 400px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods__card-img {
+  height: 300px;
+}
+.goods__card-btn {
+  margin-top: 60px;
+  background-color: #ff7c03;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px;
+}
+.footer__list-item {
+  padding-bottom: 10px;
+}
+.footer__list-link {
+  color: black;
+  position: relative;
+}
+.footer__list-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: black;
+}
+.footer__list-link:hover::after {
+  width: 100%;
+  height: 1px;
+}
+.footer__list-title {
+  color: black;
+}
+.footer__list-text {
+  color: black;
+  text-align: center;
+}
+.footer__list-right {
+  text-align: right;
+}
+.footer__list-logo {
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */
