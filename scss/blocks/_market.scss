@@ -5,17 +5,31 @@
 
   background-color: $black;
 
+  @include mobile {
+    height: 100%;
+  }
+
   &__card-holder {
     padding-top: 20px;
 
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__card {
     height: 580px;
     width: 500px;
+
+    @include mobile {
+      height: 200px;
+      width: 100%;
+    }
   }
 
   &__card-img {

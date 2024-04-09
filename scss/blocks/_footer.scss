@@ -4,11 +4,16 @@
   justify-content: space-between;
   padding: 40px 40px;
 
-  &__list {
+  @include mobile {
+    font-size: 9px;
+    padding: 20px 5px 13px 5px;
   }
 
   &__list-item {
     padding-bottom: 10px;
+    @include mobile {
+      padding-bottom: 7px;
+    }
   }
 
   &__list-link {
@@ -44,5 +49,11 @@
 
   &__list-logo {
     text-align: right;
+    height: 25px;
+    margin: 5px 5px 0 0;
+
+    @include mobile {
+      height: 15px;
+    }
   }
 }

@@ -7,6 +7,11 @@
 
   padding: 0 30px;
 
+  @include mobile {
+    background-image: url('../img/header-bg-mobile.webp');
+    min-height: 500px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -20,21 +25,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  &__nav-logo {
+    @include mobile {
+      padding-top: 20px;
+    }
   }
 
   &__nav-list {
     display: flex;
     gap: 30px;
+
+    @include mobile {
+      gap: 10px;
+    }
   }
 
-  &__nav-item {
+  &__nav-logo {
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   &__nav-link {
     position: relative;
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   &__nav-link::after {
@@ -46,6 +63,10 @@
     transition: width 0.3s;
     background-color: white;
     opacity: 0;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__nav-link:hover::after {
@@ -63,6 +84,10 @@
     width: 340px;
 
     display: block;
+
+    @include mobile {
+      width: 180px;
+    }
   }
 
   &__logo-red {
@@ -83,13 +108,18 @@
     gap: 160px;
 
     padding-bottom: 15px;
-  }
 
-  &__item {
+    @include mobile {
+      gap: 20px;
+    }
   }
 
   &__link {
     position: relative;
+
+    @include mobile {
+      font-size: 10px;
+    }
   }
 
   &__link::after {

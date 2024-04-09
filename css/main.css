@@ -137,6 +137,12 @@ a {
   width: 100%;
   padding: 0 30px;
 }
+@media only screen and (max-width: 767px) {
+  .header {
+    background-image: url("../img/header-bg-mobile.webp");
+    min-height: 500px;
+  }
+}
 .header__wrapper {
   display: flex;
   flex-direction: column;
@@ -149,12 +155,32 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  .header__nav {
+    padding-top: 20px;
+  }
+}
 .header__nav-list {
   display: flex;
   gap: 30px;
 }
+@media only screen and (max-width: 767px) {
+  .header__nav-list {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__nav-logo {
+    font-size: 12px;
+  }
+}
 .header__nav-link {
   position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .header__nav-link {
+    font-size: 12px;
+  }
 }
 .header__nav-link::after {
   content: "";
@@ -165,6 +191,11 @@ a {
   transition: width 0.3s;
   background-color: white;
   opacity: 0;
+}
+@media only screen and (max-width: 767px) {
+  .header__nav-link::after {
+    display: none;
+  }
 }
 .header__nav-link:hover::after {
   width: 100%;
@@ -178,6 +209,11 @@ a {
   transform: translate(-50%, -50%);
   width: 340px;
   display: block;
+}
+@media only screen and (max-width: 767px) {
+  .header__logo {
+    width: 180px;
+  }
 }
 .header__logo-red {
   position: absolute;
@@ -194,8 +230,18 @@ a {
   gap: 160px;
   padding-bottom: 15px;
 }
+@media only screen and (max-width: 767px) {
+  .nav__list {
+    gap: 20px;
+  }
+}
 .nav__link {
   position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .nav__link {
+    font-size: 10px;
+  }
 }
 .nav__link::after {
   content: "";
@@ -215,15 +261,32 @@ a {
   width: 100%;
   background-color: #141414;
 }
+@media only screen and (max-width: 767px) {
+  .market {
+    height: 100%;
+  }
+}
 .market__card-holder {
   padding-top: 20px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .market__card-holder {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .market__card {
   height: 580px;
   width: 500px;
+}
+@media only screen and (max-width: 767px) {
+  .market__card {
+    height: 200px;
+    width: 100%;
+  }
 }
 .market__card-img {
   width: 100%;
@@ -240,11 +303,22 @@ a {
   align-items: center;
   height: 610px;
 }
+@media only screen and (max-width: 767px) {
+  .goods {
+    padding-top: 30px;
+    height: 250px;
+  }
+}
 .goods__card-holder {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .goods__card-holder {
+    width: 100%;
+  }
 }
 .goods__card {
   background-color: white;
@@ -254,14 +328,34 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  .goods__card {
+    height: 150px;
+    width: 100px;
+  }
+}
 .goods__card-img {
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  .goods__card-img {
+    height: 100px;
+  }
 }
 .goods__card-btn {
   margin-top: 60px;
   background-color: #ff7c03;
   padding: 10px 30px;
   font-size: 16px;
+}
+@media only screen and (max-width: 767px) {
+  .goods__card-btn {
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
 }
 
 .footer {
@@ -270,8 +364,19 @@ a {
   justify-content: space-between;
   padding: 40px 40px;
 }
+@media only screen and (max-width: 767px) {
+  .footer {
+    font-size: 9px;
+    padding: 20px 5px 13px 5px;
+  }
+}
 .footer__list-item {
   padding-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .footer__list-item {
+    padding-bottom: 7px;
+  }
 }
 .footer__list-link {
   color: black;
@@ -300,4 +405,11 @@ a {
 }
 .footer__list-logo {
   text-align: right;
+  height: 25px;
+  margin: 5px 5px 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .footer__list-logo {
+    height: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
