@@ -41,14 +41,6 @@ a {
 }
 
 .container {
-  height: 100vh;
-  min-height: 800px;
-  width: 100%;
-
-  background-color: $black;
-}
-
-.container__wrapper {
   position: relative;
 
   height: 100%;
@@ -56,10 +48,5 @@ a {
   max-width: 1785px;
 
   margin: 0 auto;
-  padding: 0 30px;
-
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  // padding: 0 30px;
 }

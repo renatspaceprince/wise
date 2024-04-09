@@ -1,6 +1,9 @@
 .header {
   background-image: url(../../img/header-bg.jpg);
   background-size: cover;
+  height: 100vh;
+  min-height: 800px;
+  width: 100%;
 
   &__wrapper {
     display: flex;

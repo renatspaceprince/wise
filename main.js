@@ -12,3 +12,16 @@ logoRed.addEventListener('mouseout', function () {
   logo.style.display = 'block'
   logoRed.style.display = 'none'
 })
+
+const cards = document.querySelectorAll('.home__card')
+const cardImgs = document.querySelectorAll('.home__card-img')
+
+cards.forEach(function (card, index) {
+  card.addEventListener('mouseover', function () {
+    cardImgs[index].style.filter = 'none'
+  })
+
+  card.addEventListener('mouseout', function () {
+    cardImgs[index].style.filter = 'grayscale(100%)'
+  })
+})
