@@ -199,7 +199,7 @@ a {
   opacity: 1;
 }
 .header__logo {
-  background-image: url("../../img/logo/logo.png");
+  background-image: url("../img/logo/logo.png");
   background-size: cover;
   position: absolute;
   top: 50%;
@@ -216,18 +216,10 @@ a {
   }
 }
 .header__logo:hover {
-  background-image: url("../../img/logo/logo-red.png");
+  background-image: url("../img/logo/logo-red.png");
   transform: translate(-50%, -50%) scale(1.1);
   width: 380px;
   height: 190px;
-}
-.header__logo-red {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 390px;
-  display: none;
 }
 
 .nav__list {
