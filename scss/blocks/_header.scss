@@ -1,5 +1,5 @@
 .header {
-  background-image: url('../img/header-bg.webp');
+  background-image: url('../img/home/header-bg.webp');
   background-size: cover;
   height: 100vh;
   min-height: 800px;
@@ -8,7 +8,7 @@
   padding: 0 30px;
 
   @include mobile {
-    background-image: url('../img/header-bg-mobile.webp');
+    background-image: url('../img/home/header-bg-mobile.webp');
     min-height: 500px;
   }
 
@@ -76,18 +76,30 @@
   }
 
   &__logo {
+    background-image: url('../../img/logo/logo.png');
+    background-size: cover;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     width: 340px;
+    height: 171px;
 
-    display: block;
+    transition: transform 0.1s ease, background-color 0.1s ease;
 
     @include mobile {
       width: 180px;
+      height: 90px;
     }
+  }
+
+  &__logo:hover {
+    background-image: url('../../img/logo/logo-red.png');
+    transform: translate(-50%, -50%) scale(1.1);
+    width: 380px;
+    height: 190px;
   }
 
   &__logo-red {
