@@ -483,6 +483,7 @@ a {
      object-fit: cover;
 }
 .shop__gallery-card-text {
+  padding-top: 5px;
   display: grid;
   gap: 5px;
 }
