@@ -38,6 +38,7 @@
     object-fit: cover;
 
     filter: grayscale(100%);
+    transition: filter 0.25s;
   }
 
   &__card-img:hover {
