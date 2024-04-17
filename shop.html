@@ -34,10 +34,10 @@
               <h1 class="product__list-title">Футболка C.P. Company</h1>
             </li>
             <li class="product__list-item">
-              <p class="product__list-price">7 000 р.</p>
+              <p class="product__list-size">М</p>
             </li>
             <li class="product__list-item">
-              <p class="product__list-size">Размер: М</p>
+              <p class="product__list-price">7 000 р.</p>
             </li>
           </ul>
           <a
@@ -52,7 +52,7 @@
     </div>
     <main class="shop">
       <ul class="shop__nav">
-        <a href="index.html" class="shop__nav-logo-link">
+        <a href="./index.html" class="shop__nav-logo">
           <img src="./img/logo/logo-black.png" alt="" class="shop__nav-logo" />
         </a>
         <nav class="shop__nav-item">
@@ -82,141 +82,39 @@
           <li class="shop__gallery-nav-item">
             <a href="#" class="shop__gallery-nav-link"> НОВОЕ </a>
           </li>
+
           <li class="shop__gallery-nav-item">
-            <p>/</p>
+            <span>/</span>
           </li>
+
           <li class="shop__gallery-nav-item">
             <a href="#" class="shop__gallery-nav-link"> ВИНТАЖ </a>
           </li>
         </ul>
         <div class="shop__gallery-wrapper">
-          <div class="shop__gallery-card pants" data-code="0000">
-            <img
-              src="./img/shop/polo-sport-rl.jpg"
-              alt=""
-              class="shop__gallery-card-img"
-            />
-            <span class="shop__gallery-card-name">
-              Джинсы Polo Sport Ralph Lauren
-            </span>
-            <span class="shop__gallery-card-price">12 000 р.</span>
-          </div>
+          <shop-card
+            image="./img/shop/cp t-shirt.jpg"
+            name="Футболка C. P. Company"
+            price="7 000 р."
+          ></shop-card>
 
-          <!-- <div href="#" class="shop__gallery-card t-sh">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/cp t-shirt.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name">
-                C.P. Company T-Shirt, размер M
-              </a>
-              <p class="shop__gallery-card-price">7 000 р.</p>
-            </div>
-          </div>
+          <shop-card
+            image="./img/shop/t-s 55 black.jpg"
+            name="Футболка 55 Community"
+            price="2 700 р."
+          ></shop-card>
 
-          <div href="#" class="shop__gallery-card t-sh">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/lonsdale t-shirt.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name">
-                Lonsdale London T-SHIRT, размер L
-              </a>
-              <p class="shop__gallery-card-price">4 500 р.</p>
-            </div>
-          </div>
+          <shop-card
+            image="./img/shop/polo-sport-rl.jpg"
+            name="Джинсы Ralph Lauren"
+            price="12 000 р."
+          ></shop-card>
 
-          <div href="#" class="shop__gallery-card hood">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/hood gestog.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name"> Худи Gestog </a>
-              <p class="shop__gallery-card-price">4 000 р.</p>
-            </div>
-          </div>
-
-          <div href="#" class="shop__gallery-card hood">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/hood gestog green.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name"> Худи Gestog </a>
-              <p class="shop__gallery-card-price">4 000 р.</p>
-            </div>
-          </div>
-
-          <div href="#" class="shop__gallery-card pants">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/pants nike swoosh.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name"> Nike Swoosh </a>
-              <p class="shop__gallery-card-price">7 000 р.</p>
-            </div>
-          </div>
-
-          <div href="#" class="shop__gallery-card t-sh">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/t-s 55 black.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name"> 55 Community </a>
-              <p class="shop__gallery-card-price">2 700 р.</p>
-            </div>
-          </div>
-
-          <div href="#" class="shop__gallery-card t-sh">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/t-s 55 green.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name"> 55 Community </a>
-              <p class="shop__gallery-card-price">2 700 р.</p>
-            </div>
-          </div>
-
-          <div href="#" class="shop__gallery-card t-sh">
-            <a href="#" class="shop__gallery-card-link">
-              <img
-                src="./img/shop/t-s 55 white.jpg"
-                alt=""
-                class="shop__gallery-card-img"
-              />
-            </a>
-            <div class="shop__gallery-card-text">
-              <a href="#" class="shop__gallery-card-name"> 55 Community </a>
-              <p class="shop__gallery-card-price">2 700 р.</p>
-            </div>
-          </div> -->
+          <shop-card
+            image="./img/shop/hood gestog.jpg"
+            name="Худи Gestog"
+            price="4 000 р."
+          ></shop-card>
         </div>
       </div>
     </main>

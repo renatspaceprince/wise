@@ -21,13 +21,14 @@
     gap: 8px;
 
     @include mobile {
-      display: none;
     }
   }
 
   &__nav-logo {
     width: 130px;
     margin-bottom: 20px;
+    @include mobile {
+    }
   }
 
   &__nav-item {
@@ -75,58 +76,11 @@
     }
   }
 
-  &__gallery-nav-item {
-  }
-
   &__gallery-nav-link {
     color: black;
   }
 
   a:hover {
     color: $orange;
-  }
-
-  &__gallery-card {
-    padding: 10px;
-
-    display: flex;
-    flex-direction: column;
-
-    @include mobile {
-      padding: 0;
-    }
-  }
-
-  &__gallery-card-img {
-    width: 259px;
-    height: 343px;
-    object-fit: cover;
-
-    @include mobile {
-      height: 100%;
-    }
-  }
-
-  &__gallery-card-text {
-    padding-top: 5px;
-    display: grid;
-    gap: 5px;
-
-    @include mobile {
-    }
-  }
-
-  &__gallery-card-name {
-    color: black;
-    @include mobile {
-      font-size: 10px;
-    }
-  }
-
-  &__gallery-card-price {
-    color: black;
-    @include mobile {
-      font-size: 12px;
-    }
   }
 }

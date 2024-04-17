@@ -63,11 +63,15 @@ a {
   display: none;
 
   &__wrapper {
+    height: 100vh;
     padding: 20px 50px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    height: 100vh;
+    @include mobile {
+      padding: 10px 20px;
+    }
   }
 }

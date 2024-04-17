@@ -12,3 +12,15 @@ logoRed.addEventListener('mouseout', function () {
   logo.style.display = 'block'
   logoRed.style.display = 'none'
 })
+
+
+class WordCount extends HTMLElement {
+  constructor() {
+    // Всегда первым делом вызывайте super() в конструкторе
+    super();
+
+    // Далее пишется функциональность элемента
+
+    ...
+  }
+}
