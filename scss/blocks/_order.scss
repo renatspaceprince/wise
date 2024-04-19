@@ -1,0 +1,46 @@
+.order {
+  background-color: $black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 0;
+
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  &__card-list {
+    overflow: auto;
+    list-style-type: none;
+
+    border: 1px solid white;
+    height: 500px;
+    width: 350px;
+
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+
+    @include mobile {
+      height: 400px;
+      width: 300px;
+    }
+  }
+
+  &__card-title {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+
+    color: #929292;
+  }
+
+  &__card-item {
+    height: 130px;
+    width: 140px;
+  }
+}

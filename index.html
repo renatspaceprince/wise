@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header id="header" class="header">
@@ -51,29 +55,42 @@
           <div class="market__card-holder">
             <a href="shop.html" class="market__card">
               <img
+                src="./img/logo/shoe-red.png"
+                alt=""
+                class="market__card-name"
+              />
+              <img
                 src="./img/home/sneaker.webp"
                 alt=""
-                class="market__card-img bw-img"
+                class="market__card-img"
               />
             </a>
-            <a href="shop.html" class="market__card bw-a">
+
+            <a href="shop.html" class="market__card">
               <img
-                src="./img/home/wear.webp"
+                src="./img/logo/accessories-red.png"
                 alt=""
-                class="market__card-img bw-img"
+                class="market__card-name"
               />
-            </a>
-            <a href="shop.html" class="market__card bw-a">
               <img
                 src="./img/home/accessories.webp"
                 alt=""
-                class="market__card-img bw-img"
+                class="market__card-img"
               />
+            </a>
+
+            <a href="shop.html" class="market__card">
+              <img
+                src="./img/logo/wear-red.png"
+                alt=""
+                class="market__card-name"
+              />
+              <img src="./img/home/wear.webp" alt="" class="market__card-img" />
             </a>
           </div>
         </div>
       </section>
-      <section class="container">
+      <!-- <section class="container">
         <div class="goods">
           <div class="goods__card-holder">
             <a href="#" class="goods__card bw-a">
@@ -100,6 +117,160 @@
           </div>
           <button class="goods__card-btn">смотреть все</button>
         </div>
+      </section> -->
+      <section class="order">
+        <swiper-container
+          class="mySwiper"
+          pagination="false"
+          slides-per-view="3"
+          centeredSlides="true"
+          space-between="20"
+          free-mode="true"
+        >
+          <swiper-slide>
+            <ol class="order__card-list">
+              <h2 class="order__card-title">обувь</h2>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/sneaker/1.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/sneaker/2.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/sneaker/3.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/sneaker/4.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/sneaker/5.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/sneaker/6.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+            </ol>
+          </swiper-slide>
+          <swiper-slide>
+            <ol class="order__card-list">
+              <h2 class="order__card-title">одежда</h2>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/wear/1.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/wear/2.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/wear/3.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/wear/4.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/wear/5.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/wear/6.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+            </ol>
+          </swiper-slide>
+          <swiper-slide>
+            <ol class="order__card-list">
+              <h2 class="order__card-title">аксессуары</h2>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/acces/1.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/acces/2.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/acces/3.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/acces/4.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/acces/5.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+              <li class="order__card-item">
+                <img
+                  src="./img/order/acces/6.webp"
+                  alt=""
+                  class="order__card-img"
+                />
+              </li>
+            </ol>
+          </swiper-slide>
+        </swiper-container>
+
+        <button class="goods__card-btn">оформить заказ</button>
       </section>
     </main>
     <footer id="footer" class="footer container">
@@ -160,5 +331,6 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

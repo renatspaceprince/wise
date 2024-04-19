@@ -125,6 +125,33 @@ a {
   margin: 0 auto;
 }
 
+swiper-container {
+  width: 1200px;
+  padding-top: 20px;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  swiper-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .header {
   background-image: url("../img/home/header-bg.webp");
   background-size: cover;
@@ -274,6 +301,8 @@ a {
 .market__card {
   height: 580px;
   width: 500px;
+  position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
   .market__card {
@@ -281,16 +310,27 @@ a {
     width: 100%;
   }
 }
+.market__card-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 480px;
+  pointer-events: none;
+}
 .market__card-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  order: 1;
   filter: grayscale(100%);
-  transition: filter 0.25s;
+  transition: filter 0.25s, transform 0.3s ease-in-out;
 }
 .market__card-img:hover {
   filter: none;
+  transform: scale(1.1);
 }
 
 .goods {
@@ -399,4 +439,44 @@ a {
 }
 .footer__rigth-list {
   text-align: right;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.order {
+  background-color: #141414;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.order__title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.order__card-list {
+  overflow: auto;
+  list-style-type: none;
+  border: 1px solid white;
+  height: 500px;
+  width: 350px;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .order__card-list {
+    height: 400px;
+    width: 300px;
+  }
+}
+.order__card-title {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #929292;
+}
+.order__card-item {
+  height: 130px;
+  width: 140px;
+}
